@@ -131,7 +131,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                     scale: 0.9,
                     threshold: 30,
                     cardsCount: contents.length,
-                    cardBuilder: (context, index) => GestureDetector(
+                    cardBuilder: (context, index, _, r) => GestureDetector(
                       onTap: () {
                         if (contents[index].type == 'video') {
                           var videoList = filterAndRotateArray(contents[index].id, contents);

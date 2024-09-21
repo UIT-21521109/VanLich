@@ -104,7 +104,7 @@ class _collectionView extends State<collectionView> {
                       scale: 0.9,
                       threshold: 30,
                       cardsCount: filteredContents.length,
-                      cardBuilder: (context, index) => GestureDetector(
+                      cardBuilder: (context, index, _, r) => GestureDetector(
                         onTap: () {
                           Navigator.push(
                             context,

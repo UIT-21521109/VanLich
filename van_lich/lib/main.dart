@@ -268,7 +268,7 @@ class Example extends StatelessWidget {
                   scale: 0.9,
                   threshold: 1,
                   cardsCount: cards.length,
-                  cardBuilder: (context, index) => cards[index],
+                  cardBuilder: (context, index, _, r) => cards[index],
                 ),
               ),
             ],
